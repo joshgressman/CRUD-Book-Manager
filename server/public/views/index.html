@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Put that Postgres in that Node</title>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/scripts/client-app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/styles.css"  />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>The Omicron Library presents...</h1>
+      </header>
+      <h2>Add a book</h2>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="published">Published:</label>
+          <input type="date" id="published" name="published"  class="form-control"/>
+        </div>
+
+        <div class="form-group">
+          <label for="edition">Edition:</label>
+          <input type="number" id="edition" name="edition"  class="form-control"/>
+        </div>
+
+        <div class="form-group">
+          <label for="publihser">Publisher:</label>
+          <input type="text" id="publisher" name="publisher"  class="form-control"/>
+        </div>
+
+        <div class="form-group">
+          <label for="genre">genre:</label>
+          <input type="text" id="genre" name="genre"  class="form-control"/>
+        </div>
+
+
+
+        <button id="book-submit" class="btn btn-default">Go</button>
+      </form>
+
+      <h2>Books</h2>
+      <div id="drop-down">
+        <select id="genres">
+        <option value="sci-fi">Science Fiction</option>
+        <option value="mystery">Mystery</option>
+        <option value="thriller">Thriller</option>
+        <option value="self-help">Self Help</option>
+      </select>
+        <button id="drop-submit">Submit</button>
+      </div>
+      <ul id="book-list">
+
+      </ul>
+    </main>
+
+  </body>
+</html>
